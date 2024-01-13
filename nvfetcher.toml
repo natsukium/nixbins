@@ -1,0 +1,15 @@
+[copyq-darwin]
+src.github = "hluk/CopyQ"
+src.prefix = "v"
+fetch.url = "https://github.com/hluk/CopyQ/releases/download/v$ver/CopyQ.dmg.zip"
+
+[qutebrowser-darwin]
+src.github = "qutebrowser/qutebrowser"
+src.prefix = "v"
+fetch.url = "https://github.com/qutebrowser/qutebrowser/releases/download/v$ver/qutebrowser-$ver.dmg"
+
+
+[vivaldi-darwin]
+src.archpkg = "vivaldi"
+fetch.url = "https://downloads.vivaldi.com/stable/Vivaldi.$ver.universal.dmg"
+

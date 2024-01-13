@@ -1,0 +1,47 @@
+{
+    "copyq-darwin": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "copyq-darwin",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-8dYfEZSSI5NHGXXA+KzPg61Y7Z6nezo0Knced3j3TRU=",
+            "type": "url",
+            "url": "https://github.com/hluk/CopyQ/releases/download/v7.1.0/CopyQ.dmg.zip"
+        },
+        "version": "7.1.0"
+    },
+    "qutebrowser-darwin": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "qutebrowser-darwin",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-AvuuwUnxMcr2ekZ/O1FL/4IizV1aTMhXNrbf1SwNY7U=",
+            "type": "url",
+            "url": "https://github.com/qutebrowser/qutebrowser/releases/download/v3.1.0/qutebrowser-3.1.0.dmg"
+        },
+        "version": "3.1.0"
+    },
+    "vivaldi-darwin": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "vivaldi-darwin",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-+nUcO4jp0l6JfKFQvsCm+WruldUAJGuw9nvm+W1z+nE=",
+            "type": "url",
+            "url": "https://downloads.vivaldi.com/stable/Vivaldi.6.5.3206.53.universal.dmg"
+        },
+        "version": "6.5.3206.53"
+    }
+}
