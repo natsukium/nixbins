@@ -1,21 +1,22 @@
 {
   lib,
-  fetchzip,
   stdenv,
+  source,
   undmg,
+  unzip,
 }:
-stdenv.mkDerivation rec {
+stdenv.mkDerivation {
   pname = "copyq";
-  version = "6.4.0";
+  inherit (source) version src;
 
-  src = fetchzip {
-    url = "https://github.com/hluk/CopyQ/releases/download/v${version}/CopyQ.dmg.zip";
-    hash = "sha256-sHggRlyog+t+SWyo6sTKtJcfuEu/hgyNVXrd7sOK2XQ=";
-  };
+  nativeBuildInputs = [
+    undmg
+    unzip
+  ];
 
-  nativeBuildInputs = [undmg];
   unpackCmd = ''
-    undmg $curSrc/CopyQ.dmg
+    unzip $curSrc
+    undmg CopyQ.dmg
   '';
 
   sourceRoot = "CopyQ.app";
@@ -30,6 +31,6 @@ stdenv.mkDerivation rec {
     description = "Clipboard Manager with Advanced Features";
     license = licenses.gpl3Only;
     platforms = platforms.darwin;
-    maintainers = with maintainers; [natsukium];
+    maintainers = with maintainers; [ natsukium ];
   };
 }

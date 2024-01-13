@@ -1,19 +1,14 @@
 {
   lib,
-  fetchurl,
   stdenv,
+  source,
   undmg,
 }:
-stdenv.mkDerivation rec {
+stdenv.mkDerivation {
   pname = "qutebrowser";
-  version = "2.5.3";
+  inherit (source) version src;
 
-  src = fetchurl {
-    url = "https://github.com/qutebrowser/qutebrowser/releases/download/v${version}/qutebrowser-${version}.dmg";
-    sha256 = "sha256-T3DMZhIuXxI1tDCEi7knu6lscGCVSjU1UW76SaKd1N4=";
-  };
-
-  nativeBuildInputs = [undmg];
+  nativeBuildInputs = [ undmg ];
 
   sourceRoot = "qutebrowser.app";
 
@@ -27,6 +22,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/qutebrowser/qutebrowser";
     license = licenses.gpl3Plus;
     platforms = platforms.darwin;
-    maintainers = with maintainers; [natsukium];
+    maintainers = with maintainers; [ natsukium ];
   };
 }
