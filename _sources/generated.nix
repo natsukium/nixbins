@@ -9,6 +9,14 @@
       sha256 = "sha256-8dYfEZSSI5NHGXXA+KzPg61Y7Z6nezo0Knced3j3TRU=";
     };
   };
+  google-japanese-ime-darwin = {
+    pname = "google-japanese-ime-darwin";
+    version = "2.28.5050";
+    src = fetchurl {
+      url = "https://dl.google.com/japanese-ime/latest/GoogleJapaneseInput.dmg";
+      sha256 = "sha256-/ywNcPZ1yeo4eatv2Ty5WEILeSc/GgaizzvC6d3upTM=";
+    };
+  };
   qutebrowser-darwin = {
     pname = "qutebrowser-darwin";
     version = "3.1.0";

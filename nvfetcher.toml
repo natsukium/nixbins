@@ -3,6 +3,12 @@ src.github = "hluk/CopyQ"
 src.prefix = "v"
 fetch.url = "https://github.com/hluk/CopyQ/releases/download/v$ver/CopyQ.dmg.zip"
 
+[google-japanese-ime-darwin]
+src.webpage = "https://formulae.brew.sh/api/cask/google-japanese-ime.json"
+src.regex = '\d+\.\d+\.\d+'
+fetch.url = "https://dl.google.com/japanese-ime/latest/GoogleJapaneseInput.dmg"
+fetch.force = true
+
 [qutebrowser-darwin]
 src.github = "qutebrowser/qutebrowser"
 src.prefix = "v"
